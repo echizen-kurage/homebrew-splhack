@@ -2,7 +2,7 @@ require 'formula'
 
 class MacvimKaoriya < Formula
   homepage 'http://code.google.com/p/macvim-kaoriya/'
-  head 'https://github.com/splhack/macvim.git'
+  head 'https://github.com/echizen-kurage/macvim.git'
 
   depends_on 'cmigemo-mk'
   depends_on 'ctags-objc-ja'
