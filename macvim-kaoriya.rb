@@ -32,6 +32,9 @@ class MacvimKaoriya < Formula
                           '--enable-python3interp=dynamic',
                           '--enable-rubyinterp=dynamic',
                           '--enable-ruby19interp=dynamic'
+    
+    system 'rm src/po/ja.sjis.po'
+    system 'touch src/po/ja.sjis.po'
 
     gettext = "#{GETTEXT}/bin/"
     inreplace 'src/po/Makefile' do |s|
